@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elemenlari Kullanimi</title>
+</head>
+<body>
+    <form >
+        <h3 style="background-color: aqua;"   >Basit Form Olusturma</h3>
+            <fieldset style="background-color: rgb(171, 175, 174);">  <!-- Bilgileri bir kutu içinde gösterir-->
+                <legend>Bilgilerinizi Giriniz:</legend> <!-- bilgilerin görüneceği kutunun başlığı yazılır-->
+                    <label for="xname">Adınız:</label>
+                    <input type="text" id="xname" name="xname" required> <br> <br>
+
+                    <label for="yname">Soyadınız:</label>
+                    <input type="text" id="yname" name="yname" required> <br> <br>
+
+                    <label for="password">Şifreniz:</label> <!--   required  kullanimi ile şifre min. 8 karakter ve yazılması zorunlu olarak belirlendi-->
+                    <input type="password" name="password" minlength="8" required> <br> <br>
+
+                    <label for="mail">Mail adresiniz:</label> 
+                    <input type="email" name="email" required> <br> <br>
+
+                    <label for="birthday">Doğum Tarihiniz:</label> 
+                    <input type="date" name="birthday"> <br> <br>
+
+                    <label for="gender">Cinsiyet:</label> <!-- radio asagidaki secim alaninda birini secmemiz sagliyor -->
+                    <input type="radio" name="gender" value="male"> Erkek 
+                    <input type="radio" name="gender" value="female" required> Kadin <br> <br>
+
+                    <label for="fruit">Sevdiğiniz Meyveyi Seçiniz:</label>
+                    <select  id="fruit">
+                    <option value="">Seçiniz:</option> 
+                        <optgroup>
+                            <option value="fruit">Protakal</option>
+                            <option value="fruit">İncir</option>
+                            <option value="fruit">Muz</option>
+                            <option value="fruit">Karpuz</option>
+                            <option value="fruit">Kiraz</option>
+                            <option value="fruit">Ananas</option>
+                        </optgroup> 
+                    </select> <br> <br>
+
+                    
+                    <label for="film">Sevdiğiniz Filmler:</label>
+                    <select  id="film"> <!-- value degeri ingilizce olmali -->
+                        <option value="">Seciniz:</option> 
+                            <optgroup>
+                                <option value="cult">Kült Filmler</option>
+                                <option value="Action">Aksiyon Filmleri</option>
+                                <option value="Love">Korku Filmleri</option>
+                                <option value="animation">Animasyon Filmleri</option>
+                                <option value="comedy">Komedi Filmleri</option>
+                                <option value="horror">Aşk Filmleri</option>
+                            </optgroup> 
+                    </select> <br> <br>
+
+                    <label>Hobileriniz:</label> <!-- value değeri ingilizce olmali
+                    checkbox bir den fazla secim yapmamizi sagliyor ve istedigimiz secimi iptal edebiliyoruz-->
+                    <input type="checkbox" name="hobbies[]" value="sport"> Spor
+                    <input type="checkbox" name="hobbies[]" value="drawing"> Resim Çizmek
+                    <input type="checkbox" name="hobbies[]" value="Game"> Oyun 
+                    <input type="checkbox" name="hobbies[]" value="Read"> Okuma
+                    <input type="checkbox" name="hobbies[]" value="Gohoking"> Doğa Yürüyüşü
+                    <input type="checkbox" name="hobbies[]" value="Swiming"> Yüzmek
+                    
+                    <label for="cv">Özgeçmiş</label>
+                    <input type="file" id="cv" required> <br> <br>
+
+                    <label for="message">Lütfen Bir Mesaj Bırakınız:</label>   
+                    <textarea name="message" id="message" rows="6" cols="60"></textarea> <br> <br>
+
+                    <button type="submit">Kayıt Ol</button>
+                    <button type="reset">Temizle</button>
+
+            </fieldset> 
+
+
+
+    </form>
+</body>
+</html>
