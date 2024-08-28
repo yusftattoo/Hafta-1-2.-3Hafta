@@ -93,6 +93,14 @@ a.button {
     margin-top: 20px;
   
 }
+.card2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  
+}
 
 .card h2 {
     color: #333;
@@ -109,7 +117,65 @@ a.button {
     text-decoration: none;
     font-weight: bold;
 }
+*****
+.section.white{
+    background-color: white;
+}
+.section-title{
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 0.5;
+    text-align: center;
+    line-height: 1;/* farklı başlıkların boyutları farklı olduğu için gerksiz boşlukların kapanması için 1 verildi*/
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+.section-title::first-letter{
+    color: var(--primary-color)
+}
 
+
+.comment {
+    margin: 8px 0;
+    padding: 32px;
+    background-color: #c7c4c4;
+}
+
+
+.comment img   {
+    display: inline-block;
+    border-radius: 50%;
+
+}
+.comment h3{
+    font-weight: 500;
+    margin: 0 0 0 8px;
+    display: inline-block;
+}
+[class*="col-"] {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+* {
+    box-sizing: border-box;
+}
+.cont {
+    
+    max-width: 100%;
+    margin-left: 20%;
+    margin-right: auto;
+    padding-left: 8px; 
+    padding-right: 8px; /* konyetnarı ortalayan elementler*/
+   
+}
+.row{
+    display: flex; /* flex elementimiz oluyor*/
+    flex-direction: row; /* başka bir yerden ezilmesine karşı row eklendi*/
+    flex-wrap: wrap; /* taşan elementler aşağıya düşsün*/
+    margin-left: -8px; /* boxlar arasında boşlukların sadece içeride olması ve kenardan verilmemesi için left right -8 verildi*/
+    margin-right: -8px;
+}
+*****
 footer {
     background-color: #333;
     color: #fff;
