@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+   
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.section{
+    padding: 8rem 0;
+
+}
+*******************
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+#nav {
+    /* */
+   display: flex;
+   gap: 0 32px ; /*menu item larına ana boşluklar verildi*/
+   justify-content: end; /*elementleri tamamen saga dayıyor*/
+   align-items: center; /*butonu  nav elemenlerinden yüksek fakt aynı sırada, hizalanması için*/   
+}
+#nav .nav-item {
+   color: #f8f8f8;
+   padding: 2px; /*tıklama alanı genişlesin diye ufak bir büyütme*/
+   text-decoration: none; /*altındaki çizgileri kapatmak için*/
+   
+}
+#nav .nav-item:hover {
+   text-decoration: line-through;
+}
+main {
+    padding: 20px;
+}
+
+.button{
+    min-width: 140px; /*buton boyutu*/
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: 500; /*yazının kalın olması*/
+    line-height: 38px; /* satır yüksekliği*/
+    padding: 0 24px; /*yukarıdan ve aşağıdan 0 / sağ ve sol 24px */
+    text-align: center; /*button içersindeki metin ortada*/
+    background-color: #000000;
+    display: inline-block
+}
+.button:hover {
+    background-color: var(--primary-color); /*stil içinde tanımlı ortak değişken*/
+}
+a.button {
+    text-decoration: none;  /*a taglarında default olarak alt çizgi var onu silsin*/  
+    
+}
+
+*************************
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card1 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  
+}
+
+.card h2 {
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.read-more1 {
+    display: inline-block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
