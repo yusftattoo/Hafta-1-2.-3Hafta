@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+</head>
+<body>
+    <h1 id="title">Kayıt Formu</h1>
+    <p id="description"></p>
+   <div >
+    <div>
+        <div>
+            <form> <!--bir kactane farkli form elementini gruplamak icin kullanabiliriz. -->
+                <legend>Full Name </legend> <!--form element basligi ekler -->
+                <div id=" ">
+                    <label for="fullname">isim soyisim</label>  <!-- label inputu niteliyor, yazilacak bilgiler ve yazilabilir veri türünü secmemiz icin ikisi arasinda ki iliski onemli-->
+                    <input type="text" id="fullname"  required>  <!--burada eklenen id, label da eklenen id de yazilacak form alanina focuslanma sagliyor. -->
+                </div>
+                    
+             <!--bir kactane farkli form elementini gruplamak icin kullanabiliriz. -->
+                <legend>Mail </legend> <!--form element basligi ekler -->
+                <div id=" ">
+                    <label for="mail">Mail</label>  <!-- label inputu niteliyor, yazilacak bilgiler ve yazilabilir veri türünü secmemiz icin ikisi arasinda ki iliski onemli-->
+                    <input type="email" id="mail"  required>  <!--burada eklenen id, label da eklenen id de yazilacak form alanina focuslanma sagliyor. -->
+                </div>
+                    
+             <!--bir kactane farkli form elementini gruplamak icin kullanabiliriz. -->
+                <legend>Yaş </legend> <!--form element basligi ekler -->
+                <div id=" ">
+                    <label for="birthday">Yaş</label>  <!-- label inputu niteliyor, yazilacak bilgiler ve yazilabilir veri türünü secmemiz icin ikisi arasinda ki iliski onemli-->
+                    <input type="date" id="birthday"  required>  <!--burada eklenen id, label da eklenen id de yazilacak form alanina focuslanma sagliyor. -->
+                </div>
+            </form>        
+
+                <div id=" ">
+                    <label for="gender">Cinsiyet:</label> <!-- radio asagidaki secim alaninda birini secmemiz sagliyor, bunu icin name kismida ayni olmalidir-->
+                    <select  id="gender" >
+                        <option value="">Seciniz</option>
+                        <option value="gender">Erkek</option>
+                        <option value="gender">Kadın</option>
+                    </select>
+                    
+                    <!-- olusturulan ust satirdaki 3. inputta Nameleri farkli oldugu icin tarayicida ikinci bir kadin secimi yapiliyor-->
+                </div>
+            
+            <label for="message">Mesaj:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Kullanım şartlarını kabul ediyorum.</label><br>
+            <button type="submit">Sign Up</button>
+            <button type="reset"> Temizle</button>
+        </div>
+    </div>
+    <div>
+</body>
+</html>

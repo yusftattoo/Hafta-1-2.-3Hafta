@@ -71,7 +71,7 @@ main {
     display: inline-block
 }
 .button:hover {
-    background-color: var(--primary-color); /*stil içinde tanımlı ortak değişken*/
+    background-color: blanchedalmond; /*stil içinde tanımlı ortak değişken*/
 }
 a.button {
     text-decoration: none;  /*a taglarında default olarak alt çizgi var onu silsin*/  
@@ -79,6 +79,7 @@ a.button {
 }
 
 *************************
+
 .posts {
     display: flex;
     flex-wrap: wrap;
@@ -119,26 +120,26 @@ a.button {
 }
 *****
 .section.white{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 .section-title{
     font-size: 45px;
     font-weight: 600;
     letter-spacing: 0.5;
     text-align: center;
-    line-height: 1;/* farklı başlıkların boyutları farklı olduğu için gerksiz boşlukların kapanması için 1 verildi*/
+    line-height: 1;/* farklı başlıkların boyutları, gereksiz boşlukların kapanması için 1 verildi*/
     margin-top: 0;
     margin-bottom: 2em;
 }
 .section-title::first-letter{
-    color: var(--primary-color)
+    color: rgb(245, 126, 126)
 }
 
 
 .comment {
-    margin: 8px 0;
-    padding: 32px;
-    background-color: #c7c4c4;
+    margin: 0 20px;
+    padding: 22px;
+    background-color: #ffffff;
 }
 
 
@@ -148,18 +149,18 @@ a.button {
 
 }
 .comment h3{
-    font-weight: 500;
-    margin: 0 0 0 8px;
+    font-weight: 700;
+    margin: 50px 0 0 50px;
     display: inline-block;
 }
 [class*="col-"] {
-    padding-left: 8px;
+    padding-left: 32px;
     padding-right: 8px;
 }
 * {
     box-sizing: border-box;
 }
-.cont {
+.conta {
     
     max-width: 100%;
     margin-left: 20%;
@@ -176,12 +177,12 @@ a.button {
     margin-right: -8px;
 }
 *****
-footer {
-    background-color: #333;
-    color: #fff;
+#footer {
+    padding: 40px 0;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: rgb(22, 82, 134);
 }
+
+
+
+
