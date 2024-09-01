@@ -15,21 +15,37 @@
         <div class="hero-content">
            
             <p class=" ">Açıklama</p>
-          
+            
             <form id="survey-form">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required><br>
-            <br> <br>
+                <fieldset>  <!--  -->
+                    <legend>Full Name </legend>
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" required><br>
+                </fieldset>
+            <br> 
+                <fieldset> <!--  -->
+                    <legend>Mail </legend>
+                    <label for="email"></label>
+                    <input type="email" name="email">
+                </fieldset>
+            <br>
+                <fieldset> <!--  -->
+                    <legend>Age </legend>
+                    <label for="dob"></label>
+                    <input type="date" id="dob" name="dob" required><br> <br>
+                </fieldset>
+                <fieldset> <!--  -->
+                    <legend>Gender </legend>
+                    <label class="" for="gender"></label><br>
+                    <select id="gender" name="gender">
+                    <option value="Male">Erkek</option>
+                    <option value="female">Kadın</option>
+                    </select><br>
+                </fieldset> 
+                <button class="kayit">Kayıt ol</button> 
+            </form> <br>  
             
-                <label for="email">Mail</label>
-                <input type="email" name="email">
-            <br>    <br>
-                <label for="dob">Doğum tarihi:</label>
-                <input type="date" id="dob" name="dob" required><br> <br>
-                <button>Kayıt ol</button> 
-            </form> <br> <br>
-            
-            <a href="" class="cart-btn"> Daha Fazla</a>
+            <!--  -->
         </div>
         
     </div>

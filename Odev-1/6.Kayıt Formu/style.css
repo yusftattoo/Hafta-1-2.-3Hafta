@@ -8,7 +8,7 @@
     
 }
 body {
-    background-color: rgb(197, 63, 63);
+    background-color: rgb(194, 82, 82);
     
 }
 .hero-content {
@@ -16,11 +16,14 @@ body {
     text-align: center;
     color: rgb(23, 24, 24);
     padding: 150px 250px;
-    background: darkgrey;
+    background: rgb(87, 85, 85);
     border-radius: 15px;
     margin-top: 50px;
     margin-bottom: 150px;
 }
 .title{
     display: block;
+}
+.kayit {
+    font-size: 20px;
 }
