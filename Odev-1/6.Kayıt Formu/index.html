@@ -11,43 +11,82 @@
     <div class="hero-container" style="flex-direction: column;">
        <div>
         <h1 class="title">Survey From For CSS Practice</h1>
-       </div>
-        <div class="hero-content">
-           
-            <p class=" ">Açıklama</p>
-            
-            <form id="survey-form">
-                <fieldset>  <!--  -->
-                    <legend>Full Name </legend>
-                    <label for="name"></label>
-                    <input type="text" id="name" name="name" required><br>
-                </fieldset>
-            <br> 
-                <fieldset> <!--  -->
-                    <legend>Mail </legend>
-                    <label for="email"></label>
-                    <input type="email" name="email">
-                </fieldset>
-            <br>
-                <fieldset> <!--  -->
-                    <legend>Age </legend>
-                    <label for="dob"></label>
-                    <input type="date" id="dob" name="dob" required><br> <br>
-                </fieldset>
-                <fieldset> <!--  -->
-                    <legend>Gender </legend>
-                    <label class="" for="gender"></label><br>
-                    <select id="gender" name="gender">
-                    <option value="Male">Erkek</option>
-                    <option value="female">Kadın</option>
-                    </select><br>
-                </fieldset> 
-                <button class="kayit">Kayıt ol</button> 
-            </form> <br>  
-            
-            <!--  -->
-        </div>
+    </div>
+    <div class="hero-content">
         
+        <p class="description ">Write your information for the pre-registration form.</p>
+        
+        <form id="survey-form">
+            <fieldset>  <!-- isim soyisim alanı -->
+                <legend id="name-label"> Full Name<em>&#42;</em> </legend>
+                <label for="name"></label>
+                <input type="text" id="name" name="name" required><br>
+            </fieldset>
+        <br> 
+            <fieldset> <!--mail alanı  -->
+                <legend id="email-label">  Mail <em>&#42;</em> </legend>
+                <label  for="email"></label>
+                <input type="email" name="email name-label">
+            </fieldset>
+        <br>
+            <fieldset> <!-- yas secim alani  -->
+                <legend  id="age-label"> Age  <em>&#42;</em> </legend>
+                <label for="dob"></label>
+                <input type="date" id="dob " name="dob" required><br> <br>
+            </fieldset>
+            
+             <!-- cinsiye secim -->
+            <p  id="gender-label"> <ins>Gender</ins>  <em>&#42;</em> </p>
+                <label  for="gender"></label><br>
+                <select id="gender" name="gender">
+                <option value="Male">Erkek</option>
+                <option value="female">Kadın</option>
+            </select><br>
+          
+            
+        </form> <br>  
+        <div class="radio-group"> <!--sosyal medya seçim alanı -->
+            <ul>
+                <p class="description ">Where did you hear us?</p>
+                <label>
+                    <input  type="checkbox" name="option" value="option1">
+                    <!-- <span class="custom-radio"></span> -->
+                        <ins>Instagram</ins>
+                </label>
+                <label>
+                    <input type="checkbox" name="option" value="option2">
+                    <!-- <span class="custom-radio"></span> -->
+                        <ins>Linkedin</ins>
+                </label>
+                <label>
+                    <input type="checkbox" name="option" value="option3">
+                    <!-- <span class="custom-radio"></span> -->
+                        <ins>X(twitter)</ins>
+                </label>
+        </div>
+        <div class="feedback-group"> <!--Geri bildirim seçim alanı -->
+            <ul>
+                <label>
+                    <input type="checkbox" name="option" value="option1">
+                    <!-- <span class="custom-radio"></span> -->
+                        <ins>Terms Of Service</ins>
+                </label>
+                    <label>
+                    <input type="checkbox" name="option" value="option2">
+                    <!-- <span class="custom-radio"></span> -->
+                        <ins>Subscribe For News</ins>
+            </ul>
+        </div>
+
+        <div class="message" >
+            <label for="message">Mesajınız:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        </div>
+        <br>
+        <input class="sign" type="submit" value="Sign Up">
+                
+              
+        <!--  -->
     </div>
  
 </body>

@@ -1,29 +1,108 @@
-.hero-container{
-    margin-top: 200px;
+.hero-container{ /* ana ekran kapsayıcısı*/
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    height: auto;
+    
     align-items: center;
     background-size: auto;
     
 }
 body {
-    background-color: rgb(194, 82, 82);
+    background-color: rgb(221, 85, 103);
     
 }
-.hero-content {
-   font-size: 32px;
+.hero-content { /* form kapsayısı*/
+   font-size: 12px;
     text-align: center;
     color: rgb(23, 24, 24);
-    padding: 150px 250px;
+    padding: 15px 25px;
     background: rgb(87, 85, 85);
     border-radius: 15px;
-    margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 .title{
     display: block;
+    text-align: center;
+    font-size: 32px;
+    width: 300px;
+    color: #f1e2e2;
+    margin-top: 50px;
+    
 }
+.description{ /*Açıklama*/
+    font-size:16px;
+    text-align: center;
+    color: #f1e2e2;
+}
+
+#survey-form{ /* forum stilleri*/
+    
+padding: 30px 30px 0  30px;
+
+}
+
+#name-label{ /* fullname stilleri*/
+    text-align: start;
+    width: 25%;
+} 
+#email-label{  /* email stilleri*/
+    text-align: start;
+    width: 15%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+#age-label{ /* yas stilleri*/
+    text-align: start;
+    width: 15%;
+}
+
+#gender-label{ /*gender etiket stilleri*/
+    margin: 15px;
+    text-align: center;
+    font-size: 25px;
+    color: aquamarine;
+}
+
 .kayit {
-    font-size: 20px;
+    font-size: 20px; /*burası değişecek*/
 }
+
+.radio-group {
+    display: block;
+     /*radio üst bosluk*/
+  }
+ 
+.radio-group label {
+   
+    display: flex;/* Etiket ve giriş yan yana */
+    align-items: center; /* Dikey hizalama, start end gibi farklı etiketler ile hizaması değişiyor.
+    bunun yerine, f-drection column dikey hizmalama dahi çok fark katıyor */
+    margin-bottom: 10px; /* Alt boşluk */
+    cursor: pointer; /* İmleç işaretçisi */
+  }
+.feedback-group {
+    margin: 10px 0; /*radio üst bosluk*/
+  }
+.feedback-group label {
+    display: inline; /* Etiket ve giriş yan yana */
+    flex-direction: row;
+    margin-bottom: 10px; /* Alt boşluk */
+    padding: 15px;
+    cursor: pointer; /* İmleç işaretçisi */
+  }
+  /* Mesaj yazma alanı stil*/
+.message{ 
+    display:flex;
+   padding: 5px;
+   margin: 30px;
+}
+.sign{
+    background-color: #f85c5c;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+ 
+  
+
+ 
