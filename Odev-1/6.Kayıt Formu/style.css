@@ -1,18 +1,22 @@
-.hero-container{ /* ana ekran kapsayıcısı*/
+/* Genel stil ayarları */
+body {
+    background-color: rgb(221, 85, 103);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Ana ekran kapsayıcısı */
+.hero-container {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    
     align-items: center;
     background-size: auto;
-    
+    flex-direction: column;
 }
-body {
-    background-color: rgb(221, 85, 103);
-    
-}
-.hero-content { /* form kapsayısı*/
-   font-size: 15px;
+/* Form kapsayıcısı */
+.hero-content {
+    font-size: 15px;
     text-align: center;
     color: rgb(23, 24, 24);
     padding: 15px 25px;
@@ -20,89 +24,75 @@ body {
     border-radius: 15px;
     margin-bottom: auto;
 }
-.title{
-    display: block;
+
+/* Başlık stili */
+.title {
     text-align: center;
     font-size: 32px;
-    width: 300px;
     color: #f1e2e2;
     margin-top: 50px;
-    
 }
-.description{ /*Açıklama*/
-    font-size:16px;
+
+/* Açıklama stili */
+.description {
+    font-size: 16px;
     text-align: center;
     color: #f1e2e2;
 }
 
-#survey-form{ /* forum stilleri*/
-    
-padding: 30px 30px 0  30px;
-
+/* Form stili */
+#survey-form {
+    padding: 30px 30px 0 30px;
 }
 
-#name-label{ /* fullname stilleri*/
+/* Fullname, email, yaş ve cinsiyet alanları için stiller */
+#name-label, #email-label, #age-label {
     text-align: start;
-    width: 25%;
-} 
-#email-label{  /* email stilleri*/
-    text-align: start;
-    width: 15%;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-#age-label{ /* yas stilleri*/
-    text-align: start;
-    width: 15%;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    color: #f1e2e2;
 }
 
-#gender-label{ /*gender etiket stilleri*/
+#gender-label {
     margin: 15px;
     text-align: center;
     font-size: 25px;
     color: aquamarine;
 }
 
-.kayit {
-    font-size: 20px; /*burası değişecek*/
+/* Radio ve Checkbox Grupları */
+.radio-group{
+    margin: 15px 0;
+    text-align: start;
 }
 
-.radio-group {
-    display: block;
-     /*radio üst bosluk*/
-  }
- 
-.radio-group label {
-   
-    display: flex;/* Etiket ve giriş yan yana */
-    align-items: center; /* Dikey hizalama, start end gibi farklı etiketler ile hizaması değişiyor.
-    bunun yerine, f-drection column dikey hizmalama dahi çok fark katıyor */
-    margin-bottom: 10px; /* Alt boşluk */
-    cursor: pointer; /* İmleç işaretçisi */
-  }
 .feedback-group {
-    margin: 10px 0; /*radio üst bosluk*/
-  }
+    display: inline;
+    margin: 15px 0;
+}
+
+.radio-group label,
 .feedback-group label {
-    display: inline; /* Etiket ve giriş yan yana */
-    flex-direction: row;
-    margin-bottom: 10px; /* Alt boşluk */
-    padding: 15px;
-    cursor: pointer; /* İmleç işaretçisi */
-  }
-  /* Mesaj yazma alanı stil*/
-.message{ 
-    display:flex;
-   width: 100%;
-   margin-left: 45px;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #f1e2e2;
 }
-.sign{
+
+/* Mesaj yazma alanı stili */
+.message {
+    margin-top: 20px;
+    text-align: left;
+    color: #f1e2e2;
+}
+
+/* Gönder butonu stili */
+.sign {
     background-color: #f85c5c;
+    border: none;
     border-radius: 5px;
-    padding: 10px 10px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
 }
-
- 
-  
-
- 

@@ -2,92 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form For CSS Practice</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <div class="hero-container" style="flex-direction: column;">
-       <div>
-        <h1 class="title">Survey From For CSS Practice</h1>
-    </div>
-    <div class="hero-content">
-        
-        <p class="description ">Write your information for the pre-registration form.</p>
-        
-        <form id="survey-form">
-            <fieldset>  <!-- isim soyisim alanı -->
-                <legend id="name-label"> Full Name<em>&#42;</em> </legend>
-                <label for="name"></label>
-                <input type="text" id="name" name="name" required><br>
-            </fieldset>
-        <br> 
-            <fieldset> <!--mail alanı  -->
-                <legend id="email-label">  Mail <em>&#42;</em> </legend>
-                <label  for="email"></label>
-                <input type="email" name="email name-label">
-            </fieldset>
-        <br>
-            <fieldset> <!-- yas secim alani  -->
-                <legend  id="age-label"> Age  <em>&#42;</em> </legend>
-                <label for="dob"></label>
-                <input type="date" id="dob " name="dob" required><br> <br>
-            </fieldset>
-            
-             <!-- cinsiye secim -->
-            <p  id="gender-label"> <ins>Gender</ins>  <em>&#42;</em> </p>
-                <label  for="gender"></label><br>
-                <select id="gender" name="gender">
-                <option value="Male">Erkek</option>
-                <option value="female">Kadın</option>
-            </select><br>
-          
-            
-        </form> <br>  
-        <div class="radio-group"> <!--sosyal medya seçim alanı -->
-            <ul>
-                <p class="description ">Where did you hear us?</p>
-                <label>
-                    <input  type="checkbox" name="option" value="option1">
-                    <!-- <span class="custom-radio"></span> -->
-                        <ins>Instagram</ins>
-                </label>
-                <label>
-                    <input type="checkbox" name="option" value="option2">
-                    <!-- <span class="custom-radio"></span> -->
-                        <ins>Linkedin</ins>
-                </label>
-                <label>
-                    <input type="checkbox" name="option" value="option3">
-                    <!-- <span class="custom-radio"></span> -->
-                        <ins>X(twitter)</ins>
-                </label>
+        <div>
+            <h1 class="title">Survey Form For CSS Practice</h1>
         </div>
-        <div class="feedback-group"> <!--Geri bildirim seçim alanı -->
-            <ul>
-                <label>
-                    <input type="checkbox" name="option" value="option1">
-                    <!-- <span class="custom-radio"></span> -->
-                        <ins>Terms Of Service</ins>
-                </label>
-                    <label>
-                    <input type="checkbox" name="option" value="option2">
-                    <!-- <span class="custom-radio"></span> -->
-                        <ins>Subscribe For News</ins>
-            </ul>
-        </div>
+        <div class="hero-content">
+            <p class="description">Write your information for the pre-registration form.</p>
 
-        <div class="message" >
-            <label for="message">Mesajınız:</label><br>
-        <textarea id="message" name="message"></textarea><br>
+            <form id="survey-form">
+                <fieldset>
+                    <!-- isim soyisim alanı -->
+                    <legend id="name-label"> Full Name<em>&#42;</em> </legend>
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" required><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <!--mail alanı  -->
+                    <legend id="email-label"> Mail <em>&#42;</em> </legend>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <!-- yas secim alani  -->
+                    <legend id="age-label"> Age <em>&#42;</em> </legend>
+                    <label for="dob"></label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
+
+                <!-- cinsiyet secim -->
+                <p id="gender-label"> <ins>Gender</ins> <em>&#42;</em> </p>
+                <label for="gender"></label><br>
+                <select id="gender" name="gender">
+                    <option value="Male">Erkek</option>
+                    <option value="Female">Kadın</option>
+                </select><br>
+            </form>
+            <br>
+            
+            <!--sosyal medya seçim alanı -->
+            <div class="radio-group">
+                <p class="description">Where did you hear about us?</p>
+                <label>
+                    <input type="checkbox" name="option" value="instagram">
+                    <ins>Instagram</ins>
+                </label>
+                <label>
+                    <input type="checkbox" name="option" value="linkedin">
+                    <ins>Linkedin</ins>
+                </label>
+                <label>
+                    <input type="checkbox" name="option" value="twitter">
+                    <ins>X (Twitter)</ins>
+                </label>
+            </div>
+
+            <!--Geri bildirim seçim alanı -->
+            <div class="feedback-group">
+                <label>
+                    <input type="checkbox" name="feedback" value="terms">
+                    <ins>Terms Of Service</ins>
+                </label>
+                <label>
+                    <input type="checkbox" name="feedback" value="subscribe">
+                    <ins>Subscribe For News</ins>
+                </label>
+            </div>
+
+            <!-- Mesaj yazma alanı -->
+            <div class="message">
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+            </div>
+            <br>
+            <input class="sign" type="submit" value="Sign Up">
         </div>
-        <br>
-        <input class="sign" type="submit" value="Sign Up">
-                
-              
-        <!--  -->
     </div>
- 
 </body>
 </html>
