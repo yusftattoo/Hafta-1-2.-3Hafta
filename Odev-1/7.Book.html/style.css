@@ -1,0 +1,112 @@
+/* Genel Stiller */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #aae0f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    text-align: end;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Giriş Bölümü */
+.box2-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1eaea;
+    padding: 30px 10px;
+}
+
+.box-content {
+    text-align: center;
+    background-color: #f5e4e4;
+    padding: 30px 10px;
+}
+
+.box-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro-content blockquote {
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* Bilgi Bölümü */
+.box-section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box1 {
+    background-color: #f7dfdf;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+/* Biyografi Bölümü */
+.biography-section {
+    padding: 20px;
+    background-color: #eaeaea;
+    margin-top: 20px;
+}
+
+/* Kitaplar Bölümü */
+.books-section {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.books-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.books-section li {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Altbilgi */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
