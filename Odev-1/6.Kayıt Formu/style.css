@@ -12,13 +12,13 @@ body {
     
 }
 .hero-content { /* form kapsayısı*/
-   font-size: 12px;
+   font-size: 15px;
     text-align: center;
     color: rgb(23, 24, 24);
     padding: 15px 25px;
     background: rgb(87, 85, 85);
     border-radius: 15px;
-    margin-bottom: 50px;
+    margin-bottom: auto;
 }
 .title{
     display: block;
@@ -93,8 +93,8 @@ padding: 30px 30px 0  30px;
   /* Mesaj yazma alanı stil*/
 .message{ 
     display:flex;
-   padding: 5px;
-   margin: 30px;
+   width: 100%;
+   margin-left: 45px;
 }
 .sign{
     background-color: #f85c5c;
