@@ -1,0 +1,132 @@
+::placeholder{
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+
+  background-image: url('assets/search-solid.svg');
+  background-position: 40%;
+  background-size: 6%;
+  background-repeat: no-repeat;
+}
+
+input.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    background-color: #FAFAFA;
+}
+
+.postuserfont {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+
+.storyphoto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(238, 39, 82);
+  margin-right: 7px;
+}
+
+.storytext {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+.rightpanellinks {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.rightpanellinks:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+  margin-left: 192px;
+}
+
+body {
+  /*Body'e padding ekleyerek içerikle çakışmasını engelle*/
+  padding-top: 54px;
+  background-color: #FAFAFA;
+  color-scheme: light;
+}
+
+.navbar-collapse {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.middlearea {
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  padding-left: 1rem; /*İçeriklerin kaymaması için*/ 
+  padding-right: 1rem;
+  max-height: 200px !important;
+}
+
+/*Kartların offset 4 olacak şekilde düzenlenmesi*/
+.col-6 {
+  margin-left: 4rem;
+}
+
+.storyphoto {
+  display: block;
+  margin: 0 auto; /*Resimleri ortalar*/
+}
+
+.card-body {
+  position: relative; /*story-text öğesine göre konumlandırabilmek için*/
+}
+
+.storytext {
+  display: block;
+  text-align: center; /*İsimleri ortalar*/
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden; /*Taşan metni gizler*/
+  text-overflow: ellipsis; /*Taşan metnin yerine (...) gösterir. */
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between; /*Öğeler arası en geniş boşluğu verir.*/
+  align-items: center; /*Öğeleri dikey olarak ortalar.*/
+}
+
+.share-text {
+  margin-left: auto;
+}
+
+.card-header, .card-footer {
+  background-color: white;
+}
+
+.fixed-top {
+  position: sticky;
+  top: 0;
+}
+
+.rightact {
+  background-color: white;
+  border: none;
+}
+
+.text-right {
+  text-align: right;
+  display: block;
+}
