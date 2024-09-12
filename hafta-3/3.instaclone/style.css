@@ -1,12 +1,12 @@
 ::placeholder{
   text-align: center;
   font-size: 14px;
-  color: gray;
-
-  background-image: url('assets/search-solid.svg');
+  color: lightgray;
   background-position: 40%;
   background-size: 6%;
+  background-image: url(../assets/search-solid.svg);
   background-repeat: no-repeat;
+  padding-left: 16px;
 }
 
 input.empty {
@@ -48,85 +48,24 @@ input.empty {
   color: lightgrey;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
+body {
+  padding: 78px 0;
+  background-color: #ffff ;
+}
+
+nav {
+  height: 54px;
 }
 
 .logo {
-  margin-left: 192px;
+  padding-left: 192px;
 }
 
-body {
-  /*Body'e padding ekleyerek içerikle çakışmasını engelle*/
-  padding-top: 54px;
-  background-color: #FAFAFA;
-  color-scheme: light;
-}
-
-.navbar-collapse {
-  margin-left: 5px;
-  margin-top: 2px;
-}
-
-.middlearea {
-  margin-top: 2rem;
-  margin-right: auto;
-  margin-left: auto;
-  width: 50%;
-  padding-left: 1rem; /*İçeriklerin kaymaması için*/ 
-  padding-right: 1rem;
+.midlearea {
   max-height: 200px !important;
 }
 
-/*Kartların offset 4 olacak şekilde düzenlenmesi*/
-.col-6 {
-  margin-left: 4rem;
-}
-
-.storyphoto {
-  display: block;
-  margin: 0 auto; /*Resimleri ortalar*/
-}
-
-.card-body {
-  position: relative; /*story-text öğesine göre konumlandırabilmek için*/
-}
-
-.storytext {
-  display: block;
-  text-align: center; /*İsimleri ortalar*/
-  margin-top: 5px;
-  white-space: nowrap;
-  overflow: hidden; /*Taşan metni gizler*/
-  text-overflow: ellipsis; /*Taşan metnin yerine (...) gösterir. */
-}
-
-.card-footer {
-  display: flex;
-  justify-content: space-between; /*Öğeler arası en geniş boşluğu verir.*/
-  align-items: center; /*Öğeleri dikey olarak ortalar.*/
-}
-
-.share-text {
-  margin-left: auto;
-}
-
-.card-header, .card-footer {
-  background-color: white;
-}
-
-.fixed-top {
+#sticky-sidebar {
   position: sticky;
-  top: 0;
-}
-
-.rightact {
-  background-color: white;
-  border: none;
-}
-
-.text-right {
-  text-align: right;
-  display: block;
+  top: 5rem;
 }
