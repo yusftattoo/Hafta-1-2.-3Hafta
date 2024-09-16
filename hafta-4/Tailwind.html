@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS LandingPage</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-100">
+    <!--Navbar Start-->
+    <nav class="mx-auto my-8 rounded max-w-7xl sm:px-6 lg:px-8">
+        <div class="bg-white px-6 relative flex h-16 items-center justify-between">
+            <!-- Logo Start -->
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                        alt="Your Company">
+                </div>
+            </div>
+            <!-- Logo End -->
+            <!-- Menu Start -->
+            <div class="hidden sm:block">
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-purple-700 hover:text-white o-underline hover:underline decoration-wavy">Dashboard</a>
+                    <a href="#"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-purple-700 hover:text-white o-underline hover:underline decoration-wavy">Team</a>
+                    <a href="#"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-purple-700 hover:text-white o-underline hover:underline decoration-wavy">Projects</a>
+                    <a href="#"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-purple-700 hover:text-white o-underline hover:underline decoration-wavy">Calendar</a>
+                    <button
+                        class="rounded-md px-3 py-2 text-sm font-medium text-white bg-purple-700 hover:bg-purple-900">Sign
+                        Up</button>
+                </div>
+            </div>
+            <!-- Menu End -->
+        </div>
+        <!-- Mobile Menu Start -->
+        <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium hover:bg-purple-700 hover:text-white">Dashboard</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium hover:bg-purple-700 hover:text-white">Team</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium thover:bg-purple-700 hover:text-white">Projects</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium hover:bg-purple-700 hover:text-white">Calendar</a>
+            </div>
+        </div>
+        <!-- Mobile Menu End -->
+    </nav>
+    <!--Navbar End-->
+
+    <!-- Main Section Start -->
+    <div class="mx-auto my-8 max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-6">
+        <div class="w-full md:w-2/5 bg-white flex flex-col items-center space-y-4 py-8 px-6 rounded shadow">
+            <p class="text-purple-700 text-center mt-6">Mamba design system</p>
+            <h1 class="font-bold text-center md:text-4xl xl:text-6xl">Build it with Mamba</h1>
+            <p class="text-center">Modular and versatile. The ultimate design toolkit for savvy technology startups.</p>
+            <form action="#" class="mt-6 space-y-4 w-full">
+                <input type="text" placeholder="Your name" class="w-full px-4 py-2 border rounded-md">
+                <input type="email" placeholder="Email address" class="w-full px-4 py-2 border rounded-md">
+                <button class="bg-purple-600 text-white w-full py-2 rounded-md">Join the waitlist</button>
+            </form>
+        </div>
+        <div class="w-full md:w-3/5 flex items-center justify-center rounded overflow-hidden">
+            <img class="w-full h-full object-cover rounded" src="https://picsum.photos/id/27/1080/720" alt="Hero Image">
+        </div>
+    </div>
+    <!-- Main Section End -->
+
+    <!-- Features Section Start -->
+    <div class="mx-auto my-8 max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+        <p class="text-purple-700 text-center mt-6 uppercase">How it works</p>
+        <h1 class="text-3xl md:text-4xl xl:text-5xl font-bold text-center">Building with Mamba is simple</h1>
+        <div class="grid gap-6 w-full lg:grid-cols-3 mt-8">
+            <div class="bg-white rounded hover:shadow-lg p-6">
+                <p class="bg-purple-700 text-white w-8 p-1 text-center font-bold rounded-full">1</p>
+                <p class="mt-4"><span class="font-bold">Nostrum.</span> ,Lorem ipsum dolor, sit amet consectetur adipisicing.
+                </p>
+            </div>
+            <div class="bg-white rounded hover:shadow-lg p-6">
+                <p class="bg-purple-700 text-white w-8 p-1 text-center font-bold rounded-full">2</p>
+                <p class="mt-4"><span class="font-bold">Siamet..</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nihil? Incidunt facilis nostrum vel totam.</p>
+            </div>
+            <div class="bg-white rounded hover:shadow-lg p-6">
+                <p class="bg-purple-700 text-white w-8 p-1 text-center font-bold rounded-full">3</p>
+                <p class="mt-4"><span class="font-bold">Looremm.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis excepturi facere ab dolor corporis nihil.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Features Section End -->
+
+    <!-- Testimonial Section Start -->
+    <section class="mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="w-full h-full">
+                <img class="rounded shadow-lg h-full object-cover" src="https://picsum.photos/id/16/1080/720"
+                    alt="Mamba Image">
+            </div>
+            <div class="bg-white w-full h-full flex flex-col justify-center space-y-4 py-8 px-14 rounded">
+                <blockquote class="text-center">
+                    <img class="h-16 w-16 rounded-full mx-auto mb-6" src="https://picsum.photos/id/86/1080/720"
+                        alt="Profile Picture">
+                    <p class="italic text-sm mb-6">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores amet veritatis ea nisi, iste velit nobis et dolorem nemo reprehenderit maxime cupiditate! Veniam, illo alias?
+                        "</p>
+                    <p class="text-sm text-gray-400">Harkkyss Jonobil</p>
+                    <p class="text-sm text-gray-400">CEO of Company Co.</p>
+                </blockquote>
+                <div class="flex justify-center space-x-2 mt-4">
+                    <span class="h-2 w-2 bg-gray-900 rounded-full"></span>
+                    <span class="h-2 w-2 bg-gray-300 rounded-full"></span>
+                    <span class="h-2 w-2 bg-gray-300 rounded-full"></span>
+                    <span class="h-2 w-2 bg-gray-300 rounded-full"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Business Info Start -->
+    <section class="mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 lg:grid-cols-3">
+            <div class="bg-white p-8 space-y-8 rounded-md lg:col-span-full lg:py-12">
+                <h2 class="text-5xl font-bold">Create with us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt facilis quod accusantium beatae cum nam adipisci reiciendis omnis possimus error quo animi voluptas magni, at incidunt. Nulla ex at ullam corporis quidem adipisci vitae, perferendis dolorem libero minus atque tenetur enim pariatur cupiditate commodi in beatae, ipsa eligendi? Quis, saepe.</p>
+            </div>
+            <div class="overflow-hidden rounded lg:flex lg:col-span-3">
+                <img src="https://picsum.photos/id/43/1080/720" alt="" class="object-cover w-full h-auto max-h-96">
+                <div class="bg-white p-6 space-y-6 lg:p-8 md:flex md:flex-col">
+                    <span class="self-start px-3 py-1 rounded-full bg-purple-700 text-white">Business</span>
+                    <h2 class="text-3xl font-bold md:flex-1">Curating a workplace that inspires team movement</h2>
+                    <div>
+                        <p class="text-gray-600">November 30, 2020</p>
+                        <p class="text-gray-600">By Leroy Jenkins</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded lg:p-8 lg:py-12">
+                <p><span class="font-bold">Panel-based . </span>Flexible panels that are perfect for building functional layouts.</p>
+            </div>
+            <div class="bg-white p-6 rounded lg:p-8 lg:py-12">
+                <p><span class="font-bold">Responsive . </span>Panels look great no matter the device.</p>
+            </div>
+            <div class="bg-white p-6 rounded lg:p-8 lg:py-12">
+                <p><span class="font-bold">Premium . </span>Join over 50 000 satisfied customers who use our templates.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Business Info End -->
+
+    <!-- Team Section Start -->
+    <section class="mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded shadow-lg p-8">
+            <h2 class="text-5xl font-bold text-center">Our team is here to help you</h2>
+            <div class="flex justify-center p-4">
+                <a class="text-purple-700" href="#">Meet our crew &gt;</a>
+            </div>
+            <img src="https://picsum.photos/id/7/1080/720" alt="Team Image"
+                class="object-cover w-full h-auto mt-8 rounded max-h-96">
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Footer Start -->
+    <footer class="mx-auto my-8 max-w-7xl sm:px-6 lg:px-8">
+        <div class="bg-white rounded flex justify-between p-6 mx-auto lg:p-8">
+            <a class="font-bold" href="#">FrondEnd</a>
+            <div class="flex space-x-4">
+                <a href="https://github.com/yusftattoo"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yusuf-kayaba%C5%9F%C4%B1-rockh/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>
